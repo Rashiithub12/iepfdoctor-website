@@ -135,6 +135,17 @@ img {
     color: var(--primary-dark);
 }
 
+.logo-img {
+    height: 48px;
+    width: auto;
+}
+
+.footer-logo-img {
+    height: 40px;
+    width: auto;
+    margin-bottom: 12px;
+}
+
 .nav-links {
     display: flex;
     gap: 28px;
@@ -580,6 +591,15 @@ img {
     justify-content: center;
     font-weight: 700;
     font-size: 0.9rem;
+}
+
+.author-avatar-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-light);
+    flex-shrink: 0;
 }
 
 .testimonial-author strong {
