@@ -147,16 +147,40 @@ function handleFormSubmit(event) {
     leads.push(data);
     localStorage.setItem('iepf_leads', JSON.stringify(leads));
 
-    // Send via email using formsubmit or similar
-    // For now, show success message and send via WhatsApp
-    const message = `New Lead from IEPF Doctor Website:%0A` +
+    // 1. Send EMAIL via Web3Forms
+    // EDIT: Replace YOUR_ACCESS_KEY with key from https://web3forms.com
+    const WEB3FORMS_KEY = 'ef66976e-5cab-4ac0-89d8-a37410379471';
+
+    if (WEB3FORMS_KEY !== 'YOUR_ACCESS_KEY') {
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                access_key: WEB3FORMS_KEY,
+                subject: 'New Contact Form Lead - IEPF Doctor Website',
+                from_name: 'IEPF Doctor Contact Form',
+                name: data.name,
+                phone: data.phone,
+                email: data.email,
+                concern: data.concern,
+                message: data.message || 'N/A',
+                source: 'Contact Form',
+                timestamp: data.timestamp
+            })
+        }).then(r => r.json()).then(d => {
+            console.log('Email sent:', d);
+        }).catch(e => console.log('Email error:', e));
+    }
+
+    // 2. WhatsApp notification
+    const message = `New Contact Form Lead:%0A` +
         `Name: ${data.name}%0A` +
         `Phone: ${data.phone}%0A` +
         `Email: ${data.email}%0A` +
         `Concern: ${data.concern}%0A` +
-        `Message: ${data.message || 'N/A'}`;
+        `Message: ${data.message || 'N/A'}%0A` +
+        `Time: ${new Date().toLocaleString('en-IN')}`;
 
-    // EDIT: Change this WhatsApp number to your number
     const whatsappUrl = `https://wa.me/919301116635?text=${message}`;
 
     // Show success
@@ -376,23 +400,56 @@ function selectChatOption(valueEn, displayText) {
 }
 
 function saveChatLead() {
-    // Save to localStorage
+    // Save to localStorage as backup
     const leads = JSON.parse(localStorage.getItem('iepf_chatbot_leads') || '[]');
     chatData.timestamp = new Date().toISOString();
     chatData.source = 'chatbot';
     leads.push(chatData);
     localStorage.setItem('iepf_chatbot_leads', JSON.stringify(leads));
 
-    // Also prepare WhatsApp message for immediate notification
-    const message = `New Chatbot Lead:%0A` +
+    // 1. Send EMAIL via Web3Forms (free)
+    // EDIT: Replace YOUR_ACCESS_KEY with key from https://web3forms.com
+    const WEB3FORMS_KEY = 'ef66976e-5cab-4ac0-89d8-a37410379471';
+
+    if (WEB3FORMS_KEY !== 'YOUR_ACCESS_KEY') {
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                access_key: WEB3FORMS_KEY,
+                subject: 'New Chatbot Lead - IEPF Doctor Website',
+                from_name: 'IEPF Doctor Chatbot',
+                name: chatData.name || 'N/A',
+                phone: chatData.phone || 'N/A',
+                email: chatData.email || 'N/A',
+                concern: chatData.concern || 'N/A',
+                source: 'Website Chatbot',
+                timestamp: chatData.timestamp
+            })
+        }).then(r => r.json()).then(d => {
+            console.log('Email sent:', d);
+        }).catch(e => console.log('Email error:', e));
+    }
+
+    // 2. Send WhatsApp notification (silent background open)
+    const waMessage = `New Chatbot Lead:%0A` +
         `Name: ${chatData.name || 'N/A'}%0A` +
         `Phone: ${chatData.phone || 'N/A'}%0A` +
         `Email: ${chatData.email || 'N/A'}%0A` +
         `Concern: ${chatData.concern || 'N/A'}%0A` +
-        `Source: Website Chatbot`;
+        `Source: Website Chatbot%0A` +
+        `Time: ${new Date().toLocaleString('en-IN')}`;
 
-    // Send notification via a hidden image ping (you can replace with your own endpoint)
-    // For now, leads are stored in localStorage
+    // EDIT: Change this number to your WhatsApp number
+    const waUrl = `https://wa.me/919301116635?text=${waMessage}`;
+
+    // Open WhatsApp in background tab to send notification
+    const waLink = document.createElement('a');
+    waLink.href = waUrl;
+    waLink.target = '_blank';
+    waLink.rel = 'noopener';
+    waLink.click();
+
     console.log('Lead captured:', chatData);
 }
 
