@@ -12,21 +12,22 @@
 }
 
 :root {
-    --primary: #1a56db;
-    --primary-dark: #1440a8;
-    --primary-light: #e8f0fe;
-    --accent: #0f3fa8;
-    --text: #1f2937;
-    --text-light: #6b7280;
+    --primary: #1e40af;
+    --primary-dark: #1e3a8a;
+    --primary-light: #dbeafe;
+    --accent: #2563eb;
+    --text: #111827;
+    --text-light: #4b5563;
     --bg: #ffffff;
     --bg-light: #f8fafc;
-    --bg-section: #f1f5f9;
+    --bg-section: #f0f4ff;
     --white: #ffffff;
-    --shadow: 0 2px 12px rgba(0,0,0,0.08);
-    --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
-    --radius: 12px;
-    --radius-sm: 8px;
+    --shadow: 0 4px 16px rgba(30,64,175,0.08);
+    --shadow-lg: 0 12px 36px rgba(30,64,175,0.14);
+    --radius: 14px;
+    --radius-sm: 10px;
     --whatsapp: #25D366;
+    --gold: #d97706;
     --transition: 0.3s ease;
 }
 
@@ -64,7 +65,7 @@ img {
 
 /* === TOP BAR === */
 .top-bar {
-    background: var(--primary-dark);
+    background: linear-gradient(90deg, #1e3a8a, #1e40af);
     color: var(--white);
     font-size: 0.85rem;
     padding: 8px 0;
@@ -200,11 +201,18 @@ img {
 /* === HERO === */
 .hero {
     position: relative;
-    background: linear-gradient(135deg, #0f3fa8 0%, #1a56db 40%, #3b82f6 100%);
-    min-height: 520px;
+    background: linear-gradient(135deg, rgba(30,58,138,0.92) 0%, rgba(37,99,235,0.88) 100%);
+    min-height: 560px;
     display: flex;
     align-items: center;
     overflow: hidden;
+}
+
+.hero-bg-image {
+    position: absolute;
+    inset: 0;
+    background: url('images/hero-bg.jpg') center/cover no-repeat;
+    z-index: 0;
 }
 
 .hero::before {
@@ -214,8 +222,9 @@ img {
     right: -10%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
     border-radius: 50%;
+    z-index: 1;
 }
 
 .hero::after {
@@ -225,14 +234,16 @@ img {
     left: -5%;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
     border-radius: 50%;
+    z-index: 1;
 }
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background: linear-gradient(135deg, rgba(30,58,138,0.92) 0%, rgba(37,99,235,0.85) 100%);
+    z-index: 1;
 }
 
 .hero-content {
@@ -284,12 +295,13 @@ img {
 .btn-primary {
     background: var(--white);
     color: var(--primary);
+    font-weight: 700;
 }
 
 .btn-primary:hover {
-    background: #f0f4ff;
+    background: var(--primary-light);
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 15px rgba(30,64,175,0.2);
 }
 
 .btn-whatsapp {
@@ -310,8 +322,8 @@ img {
 /* === STATS === */
 .stats {
     background: var(--white);
-    padding: 40px 0;
-    border-bottom: 1px solid #e5e7eb;
+    padding: 50px 0;
+    border-bottom: 2px solid var(--primary-light);
 }
 
 .stats-grid {
@@ -335,7 +347,7 @@ img {
 .stat-plus {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--gold);
 }
 
 .stat-item p {
@@ -372,10 +384,84 @@ img {
     margin-right: auto;
 }
 
+/* === TRUST BANNER === */
+.trust-banner {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    padding: 60px 0;
+    color: var(--white);
+}
+
+.trust-banner-inner {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.trust-banner-text h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.trust-banner-text p {
+    font-size: 1.05rem;
+    opacity: 0.9;
+    line-height: 1.7;
+}
+
+.trust-banner-img {
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+.trust-banner-img img {
+    width: 100%;
+    display: block;
+    border-radius: var(--radius);
+}
+
+@media (max-width: 768px) {
+    .trust-banner-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .trust-banner-text h2 {
+        font-size: 1.4rem;
+    }
+    .trust-banner-img {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
+
 /* === ABOUT === */
 .about-content {
-    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
     margin: 40px auto 0;
+}
+
+.about-image {
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.03);
 }
 
 .about-text p {
@@ -424,7 +510,8 @@ img {
 .service-card:hover {
     transform: translateY(-6px);
     box-shadow: var(--shadow-lg);
-    border-color: var(--primary);
+    border-color: var(--accent);
+    border-top: 3px solid var(--accent);
 }
 
 .service-icon {
@@ -813,6 +900,13 @@ img {
     resize: vertical;
 }
 
+.contact-side-img {
+    width: 100%;
+    border-radius: var(--radius);
+    margin-bottom: 24px;
+    box-shadow: var(--shadow);
+}
+
 .contact-info-side {
     padding: 10px 0;
 }
@@ -851,7 +945,7 @@ img {
 
 /* === FOOTER === */
 .footer {
-    background: #0f172a;
+    background: linear-gradient(180deg, #0f172a 0%, #020617 100%);
     color: #cbd5e1;
     padding: 60px 0 0;
 }
@@ -1273,6 +1367,14 @@ img {
 
     .testimonials-grid {
         grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        max-height: 300px;
     }
 
     .contact-wrapper {

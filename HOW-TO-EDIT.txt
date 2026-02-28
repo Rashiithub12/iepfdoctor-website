@@ -1,0 +1,73 @@
+=============================================
+  IEPF Doctor Website — How to Edit Guide
+=============================================
+
+HOW TO UPLOAD TO HOSTINGER:
+1. Login to Hostinger → hPanel
+2. Go to File Manager → public_html
+3. Delete any existing files (backup first!)
+4. Upload these 3 files: index.html, style.css, script.js
+5. Your site is live!
+
+---------------------------------------------
+
+HOW TO EDIT TEXT (Phone, Email, Address, etc):
+
+1. Open index.html in Notepad (right-click → Open With → Notepad)
+2. Press Ctrl+F to search
+3. Look for "<!-- EDIT:" comments — these mark editable sections
+4. Change the text you want
+5. Save the file (Ctrl+S)
+6. Re-upload to Hostinger
+
+EDITABLE SECTIONS (search for these in index.html):
+- <!-- EDIT: Phone Numbers -->     → Your phone numbers
+- <!-- EDIT: Logo text -->          → Your logo/company name
+- <!-- EDIT: Main headline -->      → Hero section headline
+- <!-- EDIT: About text -->         → About Us content
+- <!-- EDIT: Add/remove services --> → Service cards
+- <!-- EDIT: Testimonials -->       → Client testimonials
+- <!-- EDIT: Address -->            → Office address
+
+---------------------------------------------
+
+HOW TO CHANGE STATS NUMBERS:
+Search for "data-target" in index.html
+Change the numbers: data-target="500" → data-target="YOUR_NUMBER"
+There are 4 stats: Claims Recovered, Years Experience, Happy Clients, Crores Recovered
+
+---------------------------------------------
+
+HOW TO CHANGE WHATSAPP NUMBER:
+Search for "919301116635" in both index.html and script.js
+Replace ALL occurrences with your WhatsApp number (without + sign)
+
+---------------------------------------------
+
+HOW TO CHANGE COLORS:
+Open style.css → at the top find ":root" section
+- --primary: #1a56db     → Main blue color
+- --primary-dark: #1440a8 → Darker blue
+
+---------------------------------------------
+
+WHERE ARE CHATBOT LEADS SAVED?
+Currently leads are saved in the visitor's browser (localStorage).
+To receive leads directly:
+- Option 1: The contact form sends data via WhatsApp message
+- Option 2: Use a service like Formspree/Formsubmit for email delivery
+  → Replace the form action with: https://formsubmit.co/YOUR_EMAIL
+
+To set up Formsubmit (FREE, no signup):
+1. In index.html, find the <form> tag
+2. Change it to: <form action="https://formsubmit.co/info@iepfdoctor.com" method="POST">
+3. Remove the onsubmit="handleFormSubmit(event)" part
+4. Each submission will be emailed to you!
+
+---------------------------------------------
+
+FILE STRUCTURE:
+index.html  → All website content (HTML)
+style.css   → All design/colors/layout (CSS)
+script.js   → All functionality (JavaScript)
+HOW-TO-EDIT.txt → This file (instructions)
