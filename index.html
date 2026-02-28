@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IEPF Doctor - India's trusted IEPF Claim Consultancy. Recover unclaimed shares, dividends, and blocked investments with expert Lawyers and Company Secretaries.">
+    <meta name="keywords" content="IEPF claim, unclaimed shares, dividend recovery, share transmission, lost share certificate, IEPF consultant India">
+    <title>IEPF Doctor — Recover Your Unclaimed Investments</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ========== TOP BAR ========== -->
+<div class="top-bar">
+    <div class="container top-bar-inner">
+        <div class="top-bar-left">
+            <!-- EDIT: Phone Numbers -->
+            <span>📞 +91-9301116635</span>
+            <span>✉️ info@iepfdoctor.com</span>
+        </div>
+        <div class="top-bar-right">
+            <button id="langToggle" class="lang-btn" onclick="toggleLanguage()">हिंदी</button>
+        </div>
+    </div>
+</div>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+        <!-- EDIT: Logo text or replace with <img src="logo.png"> -->
+        <a href="#" class="logo">
+            <span class="logo-icon">⚕️</span> IEPF<span class="logo-accent">Doctor</span>
+        </a>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" data-en="Home" data-hi="होम">Home</a></li>
+            <li><a href="#about" data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
+            <li><a href="#services" data-en="Services" data-hi="सेवाएं">Services</a></li>
+            <li><a href="#how-it-works" data-en="How It Works" data-hi="कैसे काम करता है">How It Works</a></li>
+            <li><a href="#faq" data-en="FAQ" data-hi="सवाल-जवाब">FAQ</a></li>
+            <li><a href="#contact" data-en="Contact" data-hi="संपर्क">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ========== HERO SECTION ========== -->
+<section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <!-- EDIT: Main headline -->
+        <h1 data-en="Recover Your Unclaimed Investments" data-hi="अपने दावा न किए गए निवेश वापस पाएं">
+            Recover Your Unclaimed<br>Investments
+        </h1>
+        <p class="hero-sub" data-en="India's trusted single-window solution for IEPF claims, unclaimed shares, dividends &amp; blocked investments. Our team of qualified Lawyers &amp; Company Secretaries is here to help." data-hi="IEPF दावों, दावा न किए गए शेयरों, लाभांश और अवरुद्ध निवेशों के लिए भारत का विश्वसनीय एकल-खिड़की समाधान। हमारी योग्य वकीलों और कंपनी सचिवों की टीम आपकी मदद के लिए यहां है।">
+            India's trusted single-window solution for IEPF claims, unclaimed shares, dividends &amp; blocked investments. Our team of qualified Lawyers &amp; Company Secretaries is here to help.
+        </p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary" data-en="Get Free Consultation" data-hi="मुफ्त परामर्श प्राप्त करें">Get Free Consultation</a>
+            <a href="https://wa.me/919301116635" target="_blank" class="btn btn-whatsapp">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.111.546 4.1 1.508 5.833L0 24l6.335-1.463C8.06 23.468 9.99 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.875 0-3.633-.488-5.167-1.35l-.37-.22-3.834.886.963-3.723-.24-.383C2.397 15.49 1.875 13.795 1.875 12 1.875 6.41 6.41 1.875 12 1.875S22.125 6.41 22.125 12 17.59 21.75 12 21.75z"/></svg>
+                <span data-en="WhatsApp Us" data-hi="व्हाट्सएप करें">WhatsApp Us</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== STATS COUNTER ========== -->
+<section class="stats">
+    <div class="container stats-grid">
+        <!-- EDIT: Change these numbers to your real stats -->
+        <div class="stat-item">
+            <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+            <p data-en="Claims Recovered" data-hi="दावे वसूल किए">Claims Recovered</p>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+            <p data-en="Years Experience" data-hi="वर्षों का अनुभव">Years Experience</p>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" data-target="1000">0</span><span class="stat-plus">+</span>
+            <p data-en="Happy Clients" data-hi="खुश ग्राहक">Happy Clients</p>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
+            <p data-en="Crores Recovered" data-hi="करोड़ वसूल किए">Crores Recovered</p>
+        </div>
+    </div>
+</section>
+
+<!-- ========== ABOUT SECTION ========== -->
+<section class="section about" id="about">
+    <div class="container">
+        <h2 class="section-title" data-en="About IEPF Doctor" data-hi="IEPF डॉक्टर के बारे में">About IEPF Doctor</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <!-- EDIT: About text -->
+                <p data-en="IEPF Doctor is India's trusted single-window solution provider for unclaimed investments. We are a team of highly qualified and experienced Lawyers and Company Secretaries dedicated to helping investors recover their rightful investments." data-hi="IEPF डॉक्टर दावा न किए गए निवेशों के लिए भारत का विश्वसनीय एकल-खिड़की समाधान प्रदाता है। हम अत्यधिक योग्य और अनुभवी वकीलों और कंपनी सचिवों की एक टीम हैं जो निवेशकों को उनके वैध निवेश वापस पाने में मदद करने के लिए समर्पित हैं।">
+                    IEPF Doctor is India's trusted single-window solution provider for unclaimed investments. We are a team of highly qualified and experienced <strong>Lawyers and Company Secretaries</strong> dedicated to helping investors recover their rightful investments.
+                </p>
+                <p data-en="Whether your shares were transferred to IEPF, dividends went unclaimed, or you lost share certificates — we handle the entire recovery process from start to finish so you don't have to worry about complex paperwork or legal procedures." data-hi="चाहे आपके शेयर IEPF में स्थानांतरित हो गए हों, लाभांश दावा न किया गया हो, या आपने शेयर प्रमाणपत्र खो दिए हों — हम शुरू से अंत तक पूरी वसूली प्रक्रिया संभालते हैं ताकि आपको जटिल कागजी कार्रवाई या कानूनी प्रक्रियाओं के बारे में चिंता न करनी पड़े।">
+                    Whether your shares were transferred to IEPF, dividends went unclaimed, or you lost share certificates — we handle the entire recovery process from start to finish so you don't have to worry about complex paperwork or legal procedures.
+                </p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-icon">⚖️</span>
+                        <span data-en="Qualified Lawyers" data-hi="योग्य वकील">Qualified Lawyers</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">📋</span>
+                        <span data-en="Company Secretaries" data-hi="कंपनी सचिव">Company Secretaries</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🏆</span>
+                        <span data-en="100% Dedicated Support" data-hi="100% समर्पित सहायता">100% Dedicated Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== SERVICES SECTION ========== -->
+<section class="section services" id="services">
+    <div class="container">
+        <h2 class="section-title" data-en="Our Services" data-hi="हमारी सेवाएं">Our Services</h2>
+        <p class="section-subtitle" data-en="Comprehensive solutions for all your unclaimed investment needs" data-hi="आपकी सभी दावा न किए गए निवेश जरूरतों के लिए व्यापक समाधान">Comprehensive solutions for all your unclaimed investment needs</p>
+        <div class="services-grid">
+            <!-- EDIT: Add/remove/modify services below -->
+            <div class="service-card">
+                <div class="service-icon">📈</div>
+                <h3 data-en="IEPF Share Claims" data-hi="IEPF शेयर दावे">IEPF Share Claims</h3>
+                <p data-en="Recover shares transferred to IEPF Authority due to unclaimed dividends for 7+ consecutive years." data-hi="7+ लगातार वर्षों तक दावा न किए गए लाभांश के कारण IEPF प्राधिकरण को हस्तांतरित शेयर वापस पाएं।">Recover shares transferred to IEPF Authority due to unclaimed dividends for 7+ consecutive years.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔄</div>
+                <h3 data-en="Transmission of Shares" data-hi="शेयरों का ट्रांसमिशन">Transmission of Shares</h3>
+                <p data-en="Transfer shares to legal heirs in case of death of the shareholder. We handle all succession documentation." data-hi="शेयरधारक की मृत्यु के मामले में कानूनी उत्तराधिकारियों को शेयर हस्तांतरित करें। हम सभी उत्तराधिकार दस्तावेज संभालते हैं।">Transfer shares to legal heirs in case of death of the shareholder. We handle all succession documentation.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💳</div>
+                <h3 data-en="Physical to Demat" data-hi="फिजिकल से डीमैट">Physical to Demat</h3>
+                <p data-en="Convert your old physical share certificates to electronic demat form for easy trading and management." data-hi="आसान ट्रेडिंग और प्रबंधन के लिए अपने पुराने फिजिकल शेयर प्रमाणपत्रों को इलेक्ट्रॉनिक डीमैट रूप में बदलें।">Convert your old physical share certificates to electronic demat form for easy trading and management.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📄</div>
+                <h3 data-en="Lost Share Certificates" data-hi="खोए शेयर प्रमाणपत्र">Lost Share Certificates</h3>
+                <p data-en="Lost or damaged share certificates? We help you obtain duplicate certificates and recover your holdings." data-hi="खोए या क्षतिग्रस्त शेयर प्रमाणपत्र? हम आपको डुप्लीकेट प्रमाणपत्र प्राप्त करने और आपकी होल्डिंग्स वापस पाने में मदद करते हैं।">Lost or damaged share certificates? We help you obtain duplicate certificates and recover your holdings.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💰</div>
+                <h3 data-en="Unclaimed Dividends" data-hi="दावा न किए गए लाभांश">Unclaimed Dividends</h3>
+                <p data-en="Recover dividends that remained unclaimed and were transferred to IEPF. Get back what's rightfully yours." data-hi="दावा न किए गए लाभांश वापस पाएं जो IEPF में स्थानांतरित कर दिए गए थे। जो आपका हक है वो वापस पाएं।">Recover dividends that remained unclaimed and were transferred to IEPF. Get back what's rightfully yours.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏦</div>
+                <h3 data-en="PF / PPF / GPF Recovery" data-hi="PF / PPF / GPF वसूली">PF / PPF / GPF Recovery</h3>
+                <p data-en="Recover blocked or unclaimed Provident Fund, Public Provident Fund, and Government Provident Fund investments." data-hi="अवरुद्ध या दावा न किए गए भविष्य निधि, सार्वजनिक भविष्य निधि और सरकारी भविष्य निधि निवेश वापस पाएं।">Recover blocked or unclaimed Provident Fund, Public Provident Fund, and Government Provident Fund investments.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📑</div>
+                <h3 data-en="Insurance & Mutual Funds" data-hi="बीमा और म्यूचुअल फंड">Insurance & Mutual Funds</h3>
+                <p data-en="Claim matured insurance policies and forgotten mutual fund investments that remain uncollected." data-hi="परिपक्व बीमा पॉलिसियों और भूले हुए म्यूचुअल फंड निवेशों का दावा करें जो एकत्र नहीं किए गए हैं।">Claim matured insurance policies and forgotten mutual fund investments that remain uncollected.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏢</div>
+                <h3 data-en="Delisted / Unlisted Shares" data-hi="डीलिस्टेड / अनलिस्टेड शेयर">Delisted / Unlisted Shares</h3>
+                <p data-en="Assistance with shares of companies that have been delisted or are unlisted. We help you find the right resolution." data-hi="डीलिस्ट या अनलिस्टेड कंपनियों के शेयरों के लिए सहायता। हम आपको सही समाधान खोजने में मदद करते हैं।">Assistance with shares of companies that have been delisted or are unlisted. We help you find the right resolution.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== HOW IT WORKS ========== -->
+<section class="section how-it-works" id="how-it-works">
+    <div class="container">
+        <h2 class="section-title" data-en="How It Works" data-hi="कैसे काम करता है">How It Works</h2>
+        <p class="section-subtitle" data-en="Simple 4-step process to recover your investments" data-hi="आपके निवेश वापस पाने की सरल 4-चरण प्रक्रिया">Simple 4-step process to recover your investments</p>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3 data-en="Share Your Details" data-hi="अपनी जानकारी साझा करें">Share Your Details</h3>
+                <p data-en="Fill the contact form or WhatsApp us with your investment details and documents." data-hi="संपर्क फॉर्म भरें या हमें अपने निवेश विवरण और दस्तावेजों के साथ व्हाट्सएप करें।">Fill the contact form or WhatsApp us with your investment details and documents.</p>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3 data-en="Free Consultation" data-hi="मुफ्त परामर्श">Free Consultation</h3>
+                <p data-en="Our experts review your case and provide a free assessment of recovery possibilities." data-hi="हमारे विशेषज्ञ आपके मामले की समीक्षा करते हैं और वसूली की संभावनाओं का मुफ्त आकलन प्रदान करते हैं।">Our experts review your case and provide a free assessment of recovery possibilities.</p>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3 data-en="Claim Filed" data-hi="दावा दायर">Claim Filed</h3>
+                <p data-en="We prepare all documents and file the claim with the relevant authorities on your behalf." data-hi="हम सभी दस्तावेज तैयार करते हैं और आपकी ओर से संबंधित अधिकारियों के पास दावा दायर करते हैं।">We prepare all documents and file the claim with the relevant authorities on your behalf.</p>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-card">
+                <div class="step-number">4</div>
+                <h3 data-en="Investment Recovered" data-hi="निवेश वसूल">Investment Recovered</h3>
+                <p data-en="Your shares, dividends, or investments are recovered and transferred back to you." data-hi="आपके शेयर, लाभांश, या निवेश वसूल किए जाते हैं और आपको वापस हस्तांतरित किए जाते हैं।">Your shares, dividends, or investments are recovered and transferred back to you.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== COMMON PROBLEMS ========== -->
+<section class="section problems">
+    <div class="container">
+        <h2 class="section-title" data-en="Common Problems We Solve" data-hi="हम जो सामान्य समस्याएं हल करते हैं">Common Problems We Solve</h2>
+        <div class="problems-grid">
+            <div class="problem-item">
+                <span class="problem-icon">📌</span>
+                <span data-en="Lost or damaged share certificates" data-hi="खोए या क्षतिग्रस्त शेयर प्रमाणपत्र">Lost or damaged share certificates</span>
+            </div>
+            <div class="problem-item">
+                <span class="problem-icon">📌</span>
+                <span data-en="Shares transferred to IEPF" data-hi="IEPF में स्थानांतरित शेयर">Shares transferred to IEPF</span>
+            </div>
+            <div class="problem-item">
+                <span class="problem-icon">📌</span>
+                <span data-en="Succession / inheritance cases" data-hi="उत्तराधिकार के मामले">Succession / inheritance cases</span>
+            </div>
+            <div class="problem-item">
+                <span class="problem-icon">📌</span>
+                <span data-en="Signature mismatch issues" data-hi="हस्ताक्षर बेमेल समस्याएं">Signature mismatch issues</span>
+            </div>
+            <div class="problem-item">
+                <span class="problem-icon">📌</span>
+                <span data-en="Name or address change" data-hi="नाम या पता परिवर्तन">Name or address change</span>
+            </div>
+            <div class="problem-item">
+                <span class="problem-icon">📌</span>
+                <span data-en="Company amalgamation / merger" data-hi="कंपनी विलय / एकीकरण">Company amalgamation / merger</span>
+            </div>
+            <div class="problem-item">
+                <span class="problem-icon">📌</span>
+                <span data-en="Duplicate share certificates needed" data-hi="डुप्लीकेट शेयर प्रमाणपत्र की जरूरत">Duplicate share certificates needed</span>
+            </div>
+            <div class="problem-item">
+                <span class="problem-icon">📌</span>
+                <span data-en="Physical to demat conversion issues" data-hi="फिजिकल से डीमैट रूपांतरण समस्याएं">Physical to demat conversion issues</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== TESTIMONIALS ========== -->
+<section class="section testimonials">
+    <div class="container">
+        <h2 class="section-title" data-en="What Our Clients Say" data-hi="हमारे ग्राहक क्या कहते हैं">What Our Clients Say</h2>
+        <div class="testimonials-grid">
+            <!-- EDIT: Testimonials -->
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p data-en="IEPF Doctor helped me recover shares that were stuck for over 8 years. Their team was professional, transparent, and handled all the complex paperwork. Highly recommended!" data-hi="IEPF डॉक्टर ने मुझे 8 साल से अधिक समय से फंसे शेयर वापस पाने में मदद की। उनकी टीम पेशेवर, पारदर्शी थी और सभी जटिल कागजी कार्रवाई संभाली। अत्यधिक अनुशंसित!">"IEPF Doctor helped me recover shares that were stuck for over 8 years. Their team was professional, transparent, and handled all the complex paperwork. Highly recommended!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">RK</div>
+                    <div>
+                        <strong>Rajesh Kumar</strong>
+                        <span data-en="Business Professional" data-hi="व्यापार पेशेवर">Business Professional</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p data-en="After my father's passing, I didn't know how to claim his shares. IEPF Doctor guided me through the entire transmission process. Very grateful for their support." data-hi="मेरे पिताजी के निधन के बाद, मुझे नहीं पता था कि उनके शेयरों का दावा कैसे करें। IEPF डॉक्टर ने पूरी ट्रांसमिशन प्रक्रिया में मेरा मार्गदर्शन किया। उनके सहयोग के लिए बहुत आभारी।">"After my father's passing, I didn't know how to claim his shares. IEPF Doctor guided me through the entire transmission process. Very grateful for their support."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">PS</div>
+                    <div>
+                        <strong>Priya Sharma</strong>
+                        <span data-en="Homemaker" data-hi="गृहिणी">Homemaker</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p data-en="I had old physical shares that I thought were worthless. IEPF Doctor not only helped me convert them to demat but also recovered my unclaimed dividends. Excellent service!" data-hi="मेरे पास पुराने फिजिकल शेयर थे जिन्हें मैं बेकार समझता था। IEPF डॉक्टर ने न केवल उन्हें डीमैट में बदलने में मदद की बल्कि मेरे दावा न किए गए लाभांश भी वसूल किए। उत्कृष्ट सेवा!">"I had old physical shares that I thought were worthless. IEPF Doctor not only helped me convert them to demat but also recovered my unclaimed dividends. Excellent service!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">AG</div>
+                    <div>
+                        <strong>Amit Gupta</strong>
+                        <span data-en="Retired Officer" data-hi="सेवानिवृत्त अधिकारी">Retired Officer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== FAQ SECTION ========== -->
+<section class="section faq" id="faq">
+    <div class="container">
+        <h2 class="section-title" data-en="Frequently Asked Questions" data-hi="अक्सर पूछे जाने वाले प्रश्न">Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span data-en="What is IEPF and why are my shares transferred there?" data-hi="IEPF क्या है और मेरे शेयर वहां क्यों स्थानांतरित किए गए?">What is IEPF and why are my shares transferred there?</span>
+                    <span class="faq-arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p data-en="IEPF (Investor Education and Protection Fund) is a government fund where shares and dividends are transferred when dividends remain unclaimed for 7 consecutive years. This is done under the Companies Act, 2013 to protect investor interests." data-hi="IEPF (निवेशक शिक्षा और संरक्षण कोष) एक सरकारी कोष है जहां शेयर और लाभांश तब स्थानांतरित किए जाते हैं जब लाभांश लगातार 7 वर्षों तक दावा न किया जाए। यह निवेशकों के हितों की रक्षा के लिए कंपनी अधिनियम, 2013 के तहत किया जाता है।">IEPF (Investor Education and Protection Fund) is a government fund where shares and dividends are transferred when dividends remain unclaimed for 7 consecutive years. This is done under the Companies Act, 2013 to protect investor interests.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span data-en="How long does the IEPF claim process take?" data-hi="IEPF दावा प्रक्रिया में कितना समय लगता है?">How long does the IEPF claim process take?</span>
+                    <span class="faq-arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p data-en="The IEPF claim process typically takes 3-6 months from the date of filing, depending on the complexity of the case and the responsiveness of the concerned authorities." data-hi="IEPF दावा प्रक्रिया में आमतौर पर दाखिल करने की तारीख से 3-6 महीने लगते हैं, जो मामले की जटिलता और संबंधित अधिकारियों की प्रतिक्रिया पर निर्भर करता है।">The IEPF claim process typically takes 3-6 months from the date of filing, depending on the complexity of the case and the responsiveness of the concerned authorities.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span data-en="What documents do I need for an IEPF claim?" data-hi="IEPF दावे के लिए मुझे किन दस्तावेजों की आवश्यकता है?">What documents do I need for an IEPF claim?</span>
+                    <span class="faq-arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p data-en="Typically you need: Aadhar card, PAN card, original share certificates (if available), proof of ownership, bank details, and a demat account. In case of transmission (inheritance), you'll also need a death certificate, succession certificate, and legal heir documents." data-hi="आमतौर पर आपको चाहिए: आधार कार्ड, पैन कार्ड, मूल शेयर प्रमाणपत्र (यदि उपलब्ध हो), स्वामित्व का प्रमाण, बैंक विवरण, और डीमैट खाता। ट्रांसमिशन (उत्तराधिकार) के मामले में, आपको मृत्यु प्रमाणपत्र, उत्तराधिकार प्रमाणपत्र और कानूनी उत्तराधिकारी दस्तावेज भी चाहिए।">Typically you need: Aadhar card, PAN card, original share certificates (if available), proof of ownership, bank details, and a demat account. In case of transmission (inheritance), you'll also need a death certificate, succession certificate, and legal heir documents.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span data-en="Do you charge any upfront fees?" data-hi="क्या आप कोई अग्रिम शुल्क लेते हैं?">Do you charge any upfront fees?</span>
+                    <span class="faq-arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p data-en="We offer a free initial consultation to assess your case. Our fee structure is discussed transparently during the consultation. Contact us to know more about our charges." data-hi="हम आपके मामले का आकलन करने के लिए मुफ्त प्रारंभिक परामर्श प्रदान करते हैं। हमारी शुल्क संरचना परामर्श के दौरान पारदर्शी रूप से चर्चा की जाती है। हमारे शुल्कों के बारे में अधिक जानने के लिए हमसे संपर्क करें।">We offer a free initial consultation to assess your case. Our fee structure is discussed transparently during the consultation. Contact us to know more about our charges.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span data-en="Can NRIs claim shares from IEPF?" data-hi="क्या NRI IEPF से शेयरों का दावा कर सकते हैं?">Can NRIs claim shares from IEPF?</span>
+                    <span class="faq-arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p data-en="Yes, NRIs can claim shares from IEPF. The process requires additional documentation like passport copies, overseas address proof, and NRE/NRO bank account details. We regularly handle NRI claims and can guide you through the process." data-hi="हां, NRI IEPF से शेयरों का दावा कर सकते हैं। इस प्रक्रिया में अतिरिक्त दस्तावेज जैसे पासपोर्ट प्रतियां, विदेशी पता प्रमाण और NRE/NRO बैंक खाता विवरण की आवश्यकता होती है। हम नियमित रूप से NRI दावों को संभालते हैं और प्रक्रिया में आपका मार्गदर्शन कर सकते हैं।">Yes, NRIs can claim shares from IEPF. The process requires additional documentation like passport copies, overseas address proof, and NRE/NRO bank account details. We regularly handle NRI claims and can guide you through the process.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== CONTACT SECTION ========== -->
+<section class="section contact" id="contact">
+    <div class="container">
+        <h2 class="section-title" data-en="Get Free Consultation" data-hi="मुफ्त परामर्श प्राप्त करें">Get Free Consultation</h2>
+        <p class="section-subtitle" data-en="Fill the form below and our experts will get back to you within 24 hours" data-hi="नीचे फॉर्म भरें और हमारे विशेषज्ञ 24 घंटे के भीतर आपसे संपर्क करेंगे">Fill the form below and our experts will get back to you within 24 hours</p>
+        <div class="contact-wrapper">
+            <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label data-en="Full Name" data-hi="पूरा नाम">Full Name</label>
+                        <input type="text" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label data-en="Phone Number" data-hi="फोन नंबर">Phone Number</label>
+                        <input type="tel" name="phone" required placeholder="+91 XXXXXXXXXX">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label data-en="Email Address" data-hi="ईमेल पता">Email Address</label>
+                        <input type="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label data-en="Type of Concern" data-hi="चिंता का प्रकार">Type of Concern</label>
+                        <select name="concern" required>
+                            <option value="" data-en="Select..." data-hi="चुनें...">Select...</option>
+                            <option value="iepf_claim" data-en="IEPF Share Claim" data-hi="IEPF शेयर दावा">IEPF Share Claim</option>
+                            <option value="transmission" data-en="Transmission of Shares" data-hi="शेयरों का ट्रांसमिशन">Transmission of Shares</option>
+                            <option value="physical_demat" data-en="Physical to Demat" data-hi="फिजिकल से डीमैट">Physical to Demat</option>
+                            <option value="lost_cert" data-en="Lost Share Certificate" data-hi="खोया शेयर प्रमाणपत्र">Lost Share Certificate</option>
+                            <option value="unclaimed_div" data-en="Unclaimed Dividends" data-hi="दावा न किए गए लाभांश">Unclaimed Dividends</option>
+                            <option value="pf_ppf" data-en="PF / PPF Recovery" data-hi="PF / PPF वसूली">PF / PPF Recovery</option>
+                            <option value="other" data-en="Other" data-hi="अन्य">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label data-en="Describe Your Issue" data-hi="अपनी समस्या बताएं">Describe Your Issue</label>
+                    <textarea name="message" rows="4" placeholder="Briefly describe your investment concern..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full" data-en="Submit &amp; Get Free Consultation" data-hi="सबमिट करें और मुफ्त परामर्श प्राप्त करें">Submit &amp; Get Free Consultation</button>
+            </form>
+            <div class="contact-info-side">
+                <h3 data-en="Contact Us Directly" data-hi="सीधे संपर्क करें">Contact Us Directly</h3>
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <div>
+                        <strong data-en="Phone" data-hi="फोन">Phone</strong>
+                        <!-- EDIT: Phone numbers -->
+                        <p>+91-9301116635</p>
+                        <p>+91-751-4066635</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <div>
+                        <strong data-en="Email" data-hi="ईमेल">Email</strong>
+                        <p>info@iepfdoctor.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div>
+                        <strong data-en="Office Address" data-hi="कार्यालय का पता">Office Address</strong>
+                        <!-- EDIT: Address -->
+                        <p>Old High Court Road, Near UCO Bank,<br>PIN: 474001, Madhya Pradesh, India</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/919301116635" target="_blank" class="btn btn-whatsapp btn-full" style="margin-top:1rem;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.111.546 4.1 1.508 5.833L0 24l6.335-1.463C8.06 23.468 9.99 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.875 0-3.633-.488-5.167-1.35l-.37-.22-3.834.886.963-3.723-.24-.383C2.397 15.49 1.875 13.795 1.875 12 1.875 6.41 6.41 1.875 12 1.875S22.125 6.41 22.125 12 17.59 21.75 12 21.75z"/></svg>
+                    <span data-en="Chat on WhatsApp" data-hi="व्हाट्सएप पर चैट करें">Chat on WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="footer-col">
+            <h4>IEPF<span class="logo-accent">Doctor</span></h4>
+            <p data-en="India's trusted single-window solution for recovery of unclaimed investments. Our team of qualified Lawyers and Company Secretaries is here to help you recover what's rightfully yours." data-hi="दावा न किए गए निवेशों की वसूली के लिए भारत का विश्वसनीय एकल-खिड़की समाधान। हमारी योग्य वकीलों और कंपनी सचिवों की टीम आपकी मदद के लिए यहां है।">India's trusted single-window solution for recovery of unclaimed investments. Our team of qualified Lawyers and Company Secretaries is here to help you recover what's rightfully yours.</p>
+        </div>
+        <div class="footer-col">
+            <h4 data-en="Quick Links" data-hi="त्वरित लिंक">Quick Links</h4>
+            <ul>
+                <li><a href="#home" data-en="Home" data-hi="होम">Home</a></li>
+                <li><a href="#about" data-en="About Us" data-hi="हमारे बारे में">About Us</a></li>
+                <li><a href="#services" data-en="Services" data-hi="सेवाएं">Services</a></li>
+                <li><a href="#contact" data-en="Contact" data-hi="संपर्क">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4 data-en="Services" data-hi="सेवाएं">Services</h4>
+            <ul>
+                <li><a href="#services" data-en="IEPF Share Claims" data-hi="IEPF शेयर दावे">IEPF Share Claims</a></li>
+                <li><a href="#services" data-en="Transmission of Shares" data-hi="शेयरों का ट्रांसमिशन">Transmission of Shares</a></li>
+                <li><a href="#services" data-en="Physical to Demat" data-hi="फिजिकल से डीमैट">Physical to Demat</a></li>
+                <li><a href="#services" data-en="Unclaimed Dividends" data-hi="दावा न किए गए लाभांश">Unclaimed Dividends</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4 data-en="Contact Info" data-hi="संपर्क जानकारी">Contact Info</h4>
+            <p>📞 +91-9301116635</p>
+            <p>✉️ info@iepfdoctor.com</p>
+            <p>📍 Old High Court Road, Near UCO Bank, Madhya Pradesh</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2024 IEPF Doctor. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ========== CHATBOT ========== -->
+<div class="chatbot-toggle" id="chatbotToggle" onclick="toggleChatbot()">
+    <span class="chatbot-icon">💬</span>
+    <span class="chatbot-badge" id="chatbotBadge">1</span>
+</div>
+
+<div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+        <div class="chatbot-header-info">
+            <span class="chatbot-avatar">⚕️</span>
+            <div>
+                <strong>IEPF Doctor</strong>
+                <span class="chatbot-status" data-en="Online — Ask us anything" data-hi="ऑनलाइन — कुछ भी पूछें">Online — Ask us anything</span>
+            </div>
+        </div>
+        <button class="chatbot-close" onclick="toggleChatbot()">✕</button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+        <!-- Messages injected by JS -->
+    </div>
+    <div class="chatbot-input-area" id="chatbotInputArea">
+        <!-- Dynamic input injected by JS -->
+    </div>
+</div>
+
+<!-- ========== WHATSAPP FLOATING BUTTON ========== -->
+<a href="https://wa.me/919301116635" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.111.546 4.1 1.508 5.833L0 24l6.335-1.463C8.06 23.468 9.99 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.875 0-3.633-.488-5.167-1.35l-.37-.22-3.834.886.963-3.723-.24-.383C2.397 15.49 1.875 13.795 1.875 12 1.875 6.41 6.41 1.875 12 1.875S22.125 6.41 22.125 12 17.59 21.75 12 21.75z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
